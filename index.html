@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Is it big?</title>
+		<script type="text/javascript" src="iib.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="iib.css">
+		<script src="https://use.fontawesome.com/e0304574ea.js"></script>
+	</head>
+	
+	<body>
+	<h2>Is it big?</h2>
+
+		<form>
+			<div class="input-group input-group-lg">
+  				<span class="input-group-addon" id="basic-addon1">File Type:</span>
+				<select id="type" class="form-control">
+					<option value="audio">Audio</option>
+					<option value="game">Game</option>
+					<option value="image">Image</option>
+					<option value="video">Video</option>
+				</select>
+			</div>
+
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="basic-addon1">File Size:</span>
+				<input type="number" id="size" min="0" class="form-control" step="0.1" value="10">
+			</div>
+
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="basic-addon1">File Weight:</span>
+				<select id="weight" class="form-control">
+					<option value="kb">Kb</option>
+					<option value="mb">Mb</option>
+					<option value="gb">Gb</option>
+				</select>
+			</div>
+		</form>
+		<button class="btn btn-lg btn-primary" onclick="doIt()">Go!</button><br><br>
+		<div id="output" class="well"></div>
+
+		<footer>
+			<a target="_blank" href="https://github.com/Maxzilla60/"><i class="fa fa-github" aria-hidden="true"></i></a> 
+			<a target="_blank" href="https://twitter.com/hungrymaxzilla"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</footer>
+	</body>
+</html>

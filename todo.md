@@ -1,0 +1,7 @@
+- [ ] Colorcoded
+- [ ] Less cursewords
+- [x] Bootstrap
+- [ ] Use Switch Cases
+- [ ] Context (length, resolution,..)
+- [ ] Size of the HTML file
+- [ ] FontAwesome?
