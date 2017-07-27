@@ -1,4 +1,4 @@
-- [ ] Colorcoded
+- [ ] **Colorcoded**
 - [ ] Less cursewords
 - [x] Bootstrap
 - [ ] Use Switch Cases
