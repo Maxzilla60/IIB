@@ -24,6 +24,9 @@ select.small {
 h2 {
 	text-align: center;
 }
+form {
+	max-width: 768px;
+}
 button {
 	width: 100%;
 }
