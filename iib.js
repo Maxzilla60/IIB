@@ -32,12 +32,12 @@ function doIt(){
 		checkVideo(input);
 }
 function convert(size, weight){
-	if (weight == "kb")
-		return size;
 	if (weight == "mb")
 		return size*1024;
 	if (weight == "gb")
 		return size*1048576;
+	//if (weight == "kb")
+	return size;
 }
 function checkAudio(size){
 	// Easter Eggs
@@ -49,7 +49,7 @@ function checkAudio(size){
 		output.innerHTML = "Teeny weeny sound effect.";
 	if (size > 1024 && size <= 5120)
 		output.innerHTML = "Illegally downloaded music.";
-	if (size > 5120 && size <= 102400 && weight == "mb")
+	if (size > 5120 && size <= 102400)
 		output.innerHTML = "Very good quality music.";
 	if (size > 102400)
 		output.innerHTML = "What the heck?! Ever heard of compression?";
