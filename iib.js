@@ -118,7 +118,7 @@ function checkVideo(size){
 		output.innerHTML = "Holy crap!";
 }
 function easterEggs(size){
-	if (input == 0) {
+	if (size == 0) {
 		output.innerHTML = "That's the perfect size.";
 		return true;
 	}
