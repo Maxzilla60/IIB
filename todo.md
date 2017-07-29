@@ -1,7 +1,8 @@
 - [ ] **Colorcoded**
-- [ ] Less cursewords
+- [x] Less cursewords
 - [x] Bootstrap
 - [ ] Use Switch Cases
-- [ ] Context (length, resolution,..)
+- [ ] Context? (length, resolution,..)
 - [ ] Size of the HTML file
+- [ ] More easter eggs!
 - [ ] FontAwesome?
