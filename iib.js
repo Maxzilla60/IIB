@@ -19,27 +19,17 @@ function doIt(){
 	output.innerHTML = "";
 
 	// Convert to Kb
-	var kaas = convert(parseFloat(size), weight);
-
-	// Specific sizes
-	if (kaas == 0) {
-		output.innerHTML = "That's the perfect size.";
-		return;
-	}
-	if (parseFloat(size) < 0) {
-		output.innerHTML = "So... you're <i>removing</i> memory?";
-		return;
-	}
+	var input = convert(parseFloat(size), weight);
 
 	// Check by type:
 	if (type == "audio")
-		checkAudio(kaas);
+		checkAudio(input);
 	if (type == "game")
-		checkGame(kaas);
+		checkGame(input);
 	if (type == "image")
-		checkImage(kaas);
+		checkImage(input);
 	if (type == "video")
-		checkVideo(kaas);
+		checkVideo(input);
 }
 function convert(size, weight){
 	if (weight == "kb")
@@ -60,9 +50,9 @@ function checkAudio(size){
 	if (size > 1024 && size <= 5120)
 		output.innerHTML = "Illegally downloaded music.";
 	if (size > 5120 && size <= 102400 && weight == "mb")
-		output.innerHTML = "Very good quality illegally downloaded music.";
+		output.innerHTML = "Very good quality music.";
 	if (size > 102400)
-		output.innerHTML = "What the fuck?! Ever heard of compression?";
+		output.innerHTML = "What the heck?! Ever heard of compression?";
 }
 function checkGame(size){
 	// Easter Eggs
@@ -71,7 +61,7 @@ function checkGame(size){
 
 	// Ranges
 	if (size <= 102400)
-		output.innerHTML = "A tiny indie game.";
+		output.innerHTML = "A very tiny indie game.";
 	if (size > 102400 && size <= 512000)
 		output.innerHTML = "A small indie game.";
 	if (size > 512000 && size <= 1024000)
@@ -79,7 +69,7 @@ function checkGame(size){
 	if (size > 1024000 && size <= 5242880)
 		output.innerHTML = "This might've been big 5 years ago.";
 	if (size > 5242880 && size <= 10485760)
-		output.innerHTML = "A normal AAA game.";
+		output.innerHTML = "A regular AAA game.";
 	if (size > 10485760 && size <= 20971520)
 		output.innerHTML = "A very big game.";
 	if (size > 20971520 && size <= 41943040)
@@ -125,9 +115,17 @@ function checkVideo(size){
 	if (size > 20971520 && size <= 73400320)
 		output.innerHTML = "A Blu-Ray.";
 	if (size > 73400320)
-		output.innerHTML = "Holy shit.";
+		output.innerHTML = "Holy crap!";
 }
 function easterEggs(size){
+	if (input == 0) {
+		output.innerHTML = "That's the perfect size.";
+		return true;
+	}
+	if (parseFloat(size) < 0) {
+		output.innerHTML = "So... you're <i>removing</i> memory?";
+		return true;
+	}
 	if (size == 1268776.96) { // 1.21 Gb
 		output.innerHTML = "Great Scott! A high-quality movie.";
 		return true;
