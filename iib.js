@@ -103,7 +103,7 @@ function checkVideo(size){
 	if (size <= 20480)
 		output.innerHTML = "Hey look, a colorful pixel.";
 	if (size > 20480 && size <= 102400)
-		output.innerHTML = "A 720p YouTube video.";
+		output.innerHTML = "A YouTube video.";
 	if (size > 102400 && size <= 512000)
 		output.innerHTML = "An episode of a TV-show.";
 	if (size > 512000 && size <= 716800)
