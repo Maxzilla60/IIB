@@ -3,6 +3,6 @@
 - [x] Bootstrap
 - [ ] Use Switch Cases
 - [ ] Context? (length, resolution,..)
-- [ ] Size of the HTML file
+- [ ] Easter egg: Size of the HTML file
 - [ ] More easter eggs!
 - [ ] FontAwesome?
